@@ -27,9 +27,9 @@ rcss3dMotionEditor.pro
 
 ロボカップサーバーを起動してから実行します（必要に応じてコンパイルも行われます）。  
 
----
 
+※  
 rcssnet/tcpsocket.hppなどの、ロボカップサーバーと同時にインストールされるライブラリを利用します。  
 それらのファイルが見つからないと言われた場合は、rcss3dMotionEditor.proファイルの  
 INCLUDEPATH、DEPENDPATHをお使いの環境に合わせて書きなおして下さい。  
-（apt-getコマンドでインストールした場合は、/usr/***/simsparkに入っていると思います。）
+（apt-getコマンドでインストールした場合は、/usr/(それぞれincludeとlib)/simsparkに入っていると思います。）
