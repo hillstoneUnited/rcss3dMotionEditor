@@ -3,7 +3,13 @@ layout: layout
 title: compiling
 ---
 ##コンパイルと実行方法
-Qtをインストールして下さい。  
+ソースコードをダウンロードして下さい。  
+プロジェクトページから圧縮ファイルをダウンロードして解凍するか  
+'$ git clone git://github.com/hillstoneUnited/rcss3dMotionEditor.git'  
+コマンドを利用して下さい。
+
+
+コンパイルをするためにQtをインストールして下さい。  
 GUIを作成するのに利用しているライブラリです。  
 Qtを利用するのに便利な統合開発環境であるQtCreatorも同時にインストールされます。
 
