@@ -1,6 +1,6 @@
 ---
 layout: layout
-title: usage
+title: compiling
 ---
 ##コンパイルと実行方法
 Qtをインストールして下さい。  
