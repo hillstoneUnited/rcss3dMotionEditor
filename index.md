@@ -1,19 +1,18 @@
 ---
 layout: layout
-title: test_index
+title: index
 ---
-#test index file
+#プロジェクト紹介
+ロボカップサッカーシミュレーション3Dリーグ用の  
+ロボット動作作成を補助するツールです。
 
-##hoge
 
-###piyo
+![text](images/introduction.png "introduction")  
+スライダーや数字の直接入力によって関節角度を指定できます。  
+シミュレーションサーバーは別途起動して下さい。
 
-foo bar
 
-![Alt text](images/robot_stand.png "Optional title")
-
-{{ site.author }}
-
-<{{ site.site_url }}>
-
+コンパイル・実行方法は  
+<{{ site.site_url }}/compiling.html>  
+をご覧ください。
 
