@@ -20,6 +20,7 @@ public slots:
     void moveItemToSendList();
     void removeItemFromSendList();
     void testSequence();
+    void outputAsCppSourcePart();
 
 private:
     QListWidget* poseListFromEditor;
