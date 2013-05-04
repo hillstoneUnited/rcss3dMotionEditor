@@ -166,8 +166,8 @@ void PoseEditor::saveProject(){
         return;
     }
     if(!filename.endsWith(".ppj")){
-        qDebug() << "PoseEditor:saveProject : file type isn't \"ppj\"";
-        return;
+        qDebug() << "PoseEditor:saveProject : file type isn't \"ppj\". add \".ppj\"";
+        filename = filename + ".ppj";
     }
 
     std::ofstream ofs;
