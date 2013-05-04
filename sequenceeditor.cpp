@@ -122,28 +122,50 @@ void SequenceEditor::outputAsCppSourcePart(){
     for(int i=0; i<poseListToSend->count(); i++){
         Pose p = poseListToSend->item(i)->data(Qt::UserRole).value<Pose>();
         ofs << "\tPose pose" << i << ";" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(hj1, " << p.getTarget(0) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(hj2, " << p.getTarget(1) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(laj1, " << p.getTarget(2) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(raj1, " << p.getTarget(3) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(laj2, " << p.getTarget(4) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(raj2, " << p.getTarget(5) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(laj3, " << p.getTarget(6) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(raj3, " << p.getTarget(7) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(laj4, " << p.getTarget(8) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(raj4, " << p.getTarget(9) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(llj1, " << p.getTarget(10) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(rlj1, " << p.getTarget(11) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(llj2, " << p.getTarget(12) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(rlj2, " << p.getTarget(13) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(llj3, " << p.getTarget(14) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(rlj3, " << p.getTarget(15) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(llj4, " << p.getTarget(16) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(rlj4, " << p.getTarget(17) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(llj5, " << p.getTarget(18) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(rlj5, " << p.getTarget(19) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(llj6, " << p.getTarget(20) << ");" << std::endl;
-        ofs << "\tpose" << i << ".setTarget(rlj6, " << p.getTarget(21) << ");" << std::endl;
+        if(p.getTarget(0) != 0)
+            ofs << "\tpose" << i << ".setTarget(hj1, " << p.getTarget(0) << ");" << std::endl;
+        if(p.getTarget(1) != 0)
+            ofs << "\tpose" << i << ".setTarget(hj2, " << p.getTarget(1) << ");" << std::endl;
+        if(p.getTarget(2) != 0)
+            ofs << "\tpose" << i << ".setTarget(laj1, " << p.getTarget(2) << ");" << std::endl;
+        if(p.getTarget(3) != 0)
+            ofs << "\tpose" << i << ".setTarget(raj1, " << p.getTarget(3) << ");" << std::endl;
+        if(p.getTarget(4) != 0)
+            ofs << "\tpose" << i << ".setTarget(laj2, " << p.getTarget(4) << ");" << std::endl;
+        if(p.getTarget(5) != 0)
+            ofs << "\tpose" << i << ".setTarget(raj2, " << p.getTarget(5) << ");" << std::endl;
+        if(p.getTarget(6) != 0)
+            ofs << "\tpose" << i << ".setTarget(laj3, " << p.getTarget(6) << ");" << std::endl;
+        if(p.getTarget(7) != 0)
+            ofs << "\tpose" << i << ".setTarget(raj3, " << p.getTarget(7) << ");" << std::endl;
+        if(p.getTarget(8) != 0)
+            ofs << "\tpose" << i << ".setTarget(laj4, " << p.getTarget(8) << ");" << std::endl;
+        if(p.getTarget(9) != 0)
+            ofs << "\tpose" << i << ".setTarget(raj4, " << p.getTarget(9) << ");" << std::endl;
+        if(p.getTarget(10) != 0)
+            ofs << "\tpose" << i << ".setTarget(llj1, " << p.getTarget(10) << ");" << std::endl;
+        if(p.getTarget(11) != 0)
+            ofs << "\tpose" << i << ".setTarget(rlj1, " << p.getTarget(11) << ");" << std::endl;
+        if(p.getTarget(12) != 0)
+            ofs << "\tpose" << i << ".setTarget(llj2, " << p.getTarget(12) << ");" << std::endl;
+        if(p.getTarget(13) != 0)
+            ofs << "\tpose" << i << ".setTarget(rlj2, " << p.getTarget(13) << ");" << std::endl;
+        if(p.getTarget(14) != 0)
+            ofs << "\tpose" << i << ".setTarget(llj3, " << p.getTarget(14) << ");" << std::endl;
+        if(p.getTarget(15) != 0)
+            ofs << "\tpose" << i << ".setTarget(rlj3, " << p.getTarget(15) << ");" << std::endl;
+        if(p.getTarget(16) != 0)
+            ofs << "\tpose" << i << ".setTarget(llj4, " << p.getTarget(16) << ");" << std::endl;
+        if(p.getTarget(17) != 0)
+            ofs << "\tpose" << i << ".setTarget(rlj4, " << p.getTarget(17) << ");" << std::endl;
+        if(p.getTarget(18) != 0)
+            ofs << "\tpose" << i << ".setTarget(llj5, " << p.getTarget(18) << ");" << std::endl;
+        if(p.getTarget(19) != 0)
+            ofs << "\tpose" << i << ".setTarget(rlj5, " << p.getTarget(19) << ");" << std::endl;
+        if(p.getTarget(20) != 0)
+            ofs << "\tpose" << i << ".setTarget(llj6, " << p.getTarget(20) << ");" << std::endl;
+        if(p.getTarget(21) != 0)
+            ofs << "\tpose" << i << ".setTarget(rlj6, " << p.getTarget(21) << ");" << std::endl;
     }
 
     ofs << "\tSequence sequence;" << std::endl;
